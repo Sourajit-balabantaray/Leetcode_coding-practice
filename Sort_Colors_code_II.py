@@ -3,7 +3,6 @@ class Solution:
         l1=[]
         l2=[]
         l3=[]
-        l4=[]
         for i in nums:
             if i==0:
                 l1.append(i)
