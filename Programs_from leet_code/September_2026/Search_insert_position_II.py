@@ -3,7 +3,6 @@ class Solution:
         low=0
         high=len(nums)
         mid=0
-        found=0
         while low<high:
             mid=(low+high)//2
             if nums[mid]==target:
