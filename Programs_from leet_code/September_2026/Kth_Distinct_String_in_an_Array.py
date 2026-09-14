@@ -7,8 +7,7 @@ class Solution:
         for j in s:
             if s[j]==1:
                 l.append(j)
-        if l==[]:
-            return ""
-        elif k<=len(s):
+        
+        elif k<=len(l):
             return l[k-1]
         return ""
