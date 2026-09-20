@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def isMonotonic(self, nums: List[int]) -> bool:
         if nums[0]>nums[1]:
