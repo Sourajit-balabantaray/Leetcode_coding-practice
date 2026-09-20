@@ -2,14 +2,15 @@ from typing import List
 
 class Solution:
     def kthDistinct(self, arr: List[str], k: int) -> str:
-        s={}
+        s = {}
         for i in arr:
-           s[i]= s.get(i,0)+1
-        l=[]
+            s[i] = s.get(i, 0) + 1
+
+        l = []
         for j in s:
-            if s[j]==1:
+            if s[j] == 1:
                 l.append(j)
-        
-        elif k<=len(l):
-            return l[k-1]
+
+        if k <= len(l):
+            return l[k - 1]
         return ""
