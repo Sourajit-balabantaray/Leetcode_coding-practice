@@ -15,5 +15,3 @@ class Solution:
                 if l%s!=0:
                     return False
         return True
-
-        
