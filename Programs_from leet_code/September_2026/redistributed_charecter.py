@@ -1,17 +1,18 @@
+from collections import Counter
+from typing import List
+
+
 class Solution:
     def makeEqual(self, words: List[str]) -> bool:
-        d={}
-        s=len(words)
-        for i in words:
-            for j in i:
-                if j in d:
-                    d[j]+=1
-                else:
-                    d[j]=1
-        for k,l in d.items():
-            if d[k]<s:
+        if not words:
+            return True
+
+        counts = Counter()
+        for word in words:
+            counts.update(word)
+
+        n = len(words)
+        for value in counts.values():
+            if value % n != 0:
                 return False
-            else:
-                if l%s!=0:
-                    return False
         return True
