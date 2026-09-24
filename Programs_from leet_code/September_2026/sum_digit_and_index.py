@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def smallestIndex(self, nums: List[int]) -> int:
         def dig(n):
